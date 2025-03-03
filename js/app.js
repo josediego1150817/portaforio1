@@ -21,6 +21,48 @@ document.addEventListener('DOMContentLoaded', () => {
             email: 'claudiaygomez@ufps.edu.co',
             github: 'GitHub',
             image: 'https://via.placeholder.com/300'
+        },
+        {
+            name: 'Claudia Yamile Gomez Llanez',
+            id: '05096',
+            email: 'claudiaygomez@ufps.edu.co',
+            github: 'GitHub',
+            image: 'https://via.placeholder.com/300'
+        },
+        {
+            name: 'Claudia Yamile Gomez Llanez',
+            id: '05096',
+            email: 'claudiaygomez@ufps.edu.co',
+            github: 'GitHub',
+            image: 'https://via.placeholder.com/300'
+        },
+        {
+            name: 'Claudia Yamile Gomez Llanez',
+            id: '05096',
+            email: 'claudiaygomez@ufps.edu.co',
+            github: 'GitHub',
+            image: 'https://via.placeholder.com/300'
+        },
+        {
+            name: 'Claudia Yamile Gomez Llanez',
+            id: '05096',
+            email: 'claudiaygomez@ufps.edu.co',
+            github: 'GitHub',
+            image: 'https://via.placeholder.com/300'
+        },
+        {
+            name: 'Claudia Yamile Gomez Llanez',
+            id: '05096',
+            email: 'claudiaygomez@ufps.edu.co',
+            github: 'GitHub',
+            image: 'https://via.placeholder.com/300'
+        },
+        {
+            name: 'Claudia Yamile Gomez Llanez',
+            id: '05096',
+            email: 'claudiaygomez@ufps.edu.co',
+            github: 'GitHub',
+            image: 'https://via.placeholder.com/300'
         }
     ];
 
@@ -31,15 +73,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderStudents() {
         studentsList.innerHTML = '';
         students.forEach(student => {
+            console.log(student.name);
+            
             const clone = template.content.cloneNode(true);
             
             clone.querySelector('.student-name').textContent = student.name;
+            /*
             clone.querySelector('.student-id').textContent = `ID: ${student.id}`;
             clone.querySelector('.student-email').textContent = student.email;
             clone.querySelector('.student-image').src = student.image;
             clone.querySelector('.github-link').href = `https://github.com/${student.github}`;
-
+            */
             studentsList.appendChild(clone);
+            
         });
     }
 
